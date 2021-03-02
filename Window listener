@@ -1,0 +1,52 @@
+import java.awt.*;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
+
+public class Win_Listner extends Frame {
+    public static void main(String[] args){
+        Win_Listner w = new Win_Listner();
+        w.setTitle("close");
+        w.setSize(600,600);
+        w.setVisible(true);
+        w.addWindowListener(new newclass2());
+
+    }
+}
+class newclass2 implements WindowListener{
+    @Override
+    public void windowOpened(WindowEvent e) {
+
+    }
+
+    @Override
+    public void windowClosing(WindowEvent e) {
+
+    }
+
+    @Override
+    public void windowClosed(WindowEvent e) {
+
+    }
+
+    @Override
+    public void windowIconified(WindowEvent e) {
+
+    }
+
+    @Override
+    public void windowDeiconified(WindowEvent e) {
+
+    }
+
+    @Override
+    public void windowActivated(WindowEvent e ){
+
+    }
+
+    @Override
+    public void windowDeactivated(WindowEvent e) {
+
+    }
+
+
+}
