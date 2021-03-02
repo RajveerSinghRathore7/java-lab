@@ -1,0 +1,14 @@
+import java.awt.*;
+
+
+public class newFrame{
+public static void main(String[] args){
+      newFrame r = new newFrame("ratro");
+      r.setTitle("rajveer singh rathore")
+      r.setSize( 600, 600); 
+      r.setVisible(true);
+     
+}
+}
+
+      
