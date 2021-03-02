@@ -1,0 +1,20 @@
+import java.awt.*;
+import  java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class winAdator extends  Frame {
+    public static void main(String[] args){
+        winAdator r = new winAdator();
+        r.setTitle("click to close");
+        r.setSize(600,650);
+        r.setVisible(true);
+        r.addWindowListener(new class1());
+    }
+}
+class class1 extends WindowAdapter{
+    @Override
+    public  void windowClosing(WindowEvent e){
+        System.exit(0);
+
+    }
+}
