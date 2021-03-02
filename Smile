@@ -1,0 +1,27 @@
+import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+public class smiley extends  Frame {
+    smiley(){
+        this.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
+    }
+    public void paint(Graphics r) {
+        r.setColor(Color.blue);
+        r.drawRect(40, 40, 200, 200);
+        r.drawOval(90, 70, 80, 80);
+        r.drawOval(110, 95, 5, 5);
+        r.drawOval(145, 95, 5, 5);
+        r.drawLine(130, 95, 130, 115);
+        r.drawArc(113, 115, 35, 20, 0, -180);
+    }
+     public static void main(String[] args){
+        smiley y =  new smiley();
+        y.setSize(400,400);
+        y.setTitle("smile");
+        y.setVisible(true);
+     }
+    }
