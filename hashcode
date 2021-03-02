@@ -1,0 +1,6 @@
+public class hashCode {
+    public static void main(String[] args){
+        hashCode r = new hashCode();
+        System.out.println("hash code = "+ r.hashCode());
+    }
+}
