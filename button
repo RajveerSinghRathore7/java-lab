@@ -1,0 +1,51 @@
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+class fbutton extends Frame implements ActionListener {
+    fbutton() {
+        this.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
+        Button r1, r2, r3, r4;
+        r1 = new Button("yellow");
+        r2 = new Button("green");
+        r3 = new Button("black");
+        r4 = new Button("blue");
+        r1.addActionListener(this);
+        r2.addActionListener(this);
+        r3.addActionListener(this);
+        r4.addActionListener(this);
+        add(r1);
+        add(r2);
+        add(r3);
+        add(r4);
+    }
+
+ @Override
+    public void actionPerformed(ActionEvent e) {
+        String str = e.getActionCommand();
+        if (str.equals("yellow")) this.setBackground(Color.yellow);
+        if (str.equals("green")) this.setBackground(Color.green);
+        if (str.equals("black")) this.setBackground(Color.black);
+        if (str.equals("blue")) this.setBackground(Color.blue);
+
+
+    }
+
+    
+
+
+
+    public  void main(String[] args) {
+
+        fbutton r = new fbutton();
+        r.setSize(400, 400);
+        r.setVisible(true);
+        r.setLayout(new FlowLayout());
+    }
+}
