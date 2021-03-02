@@ -1,0 +1,33 @@
+import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+
+public class house extends Frame {
+    house(){
+        this.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+
+            }
+        });
+    }
+    public void paint(Graphics r){
+        r.setColor(Color.pink);
+        r.drawRect(260,280,790,380);
+        r.setColor(Color.CYAN);
+        r.drawLine(260,280,370,180);
+        r.drawLine(370,180,470,280);
+        r.drawLine(370,180,1050,180);
+        r.drawLine(1050,280,1050,280);
+        r.drawLine(1050,280,470, 660);
+        r.drawRect(550,510,90,150);
+
+    }
+     public static void main(String[] args){
+        house h1 = new house();
+         h1.setSize(1900,1900);
+         h1.setVisible(true);
+     }
+}
