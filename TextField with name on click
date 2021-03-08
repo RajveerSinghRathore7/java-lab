@@ -1,0 +1,28 @@
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+
+public class Textfeild_withnameonbutton implements ActionListener {
+
+    Button b = new Button("click me");
+    TextField t = new TextField(20);
+    Frame f = new Frame();
+
+    Textfeild_withnameonbutton(){
+        f.setLayout(new FlowLayout());
+        f.add(b);
+        f.add(t);
+        f.setVisible(true);
+        f.setSize(600,600);
+        b.addActionListener(this);
+
+    }
+    public static void main(String[] args){
+        Textfeild_withnameonbutton r = new Textfeild_withnameonbutton();
+    }
+    @Override
+    public void actionPerformed(ActionEvent e){
+        t.setText("rajveer");
+    }
+}
