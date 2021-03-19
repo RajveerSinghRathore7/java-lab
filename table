@@ -1,0 +1,23 @@
+import javax.swing.*;
+
+public class table {
+    JFrame f=new JFrame();
+    table(){
+        String data[][]={ {"1","rajveer","CSE"},{"2","shilendra","CSE"},{"3","banu","CSE"},{"4","raunak","CSE"},
+                {"5","rahul","CSE"},{"7","ramu","CSE"},{"8","ria","CSE"},{"9","yash","CSE"},
+                {"10","yash","CSE"},{"11","gumu","CSE"},{"12","goku","CSE"},{"13","luffy","CSE"}};
+
+
+        String column[]={" Roll no","Name ","Course "};
+        JTable t=new JTable(data,column);
+        t.setBounds(30,40,200,300);
+
+        JScrollPane sp=new JScrollPane(t);
+        f.add(sp);
+        f.setSize(400,400);
+        f.setVisible(true); f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+    public static void main(String[] args) {
+        table tb = new table();
+    }
+}
