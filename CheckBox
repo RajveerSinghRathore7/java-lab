@@ -1,0 +1,27 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class cheackBox  {
+    cheackBox() {
+        Frame f = new Frame("checkbox");
+        JCheckBox c1 = new JCheckBox("english");
+        c1.setBounds(100, 100, 100, 50);
+        JCheckBox c2 = new JCheckBox("hindi");
+        c2.setBounds(100, 150, 100, 50);
+        JCheckBox c3 = new JCheckBox("spanish");
+        c3.setBounds(100, 200, 100, 50);
+        JCheckBox c4 = new JCheckBox(" mallalium ");
+        c4.setBounds(100, 250, 100, 50);
+        f.add(c1);
+        f.add(c2);
+        f.add(c3);
+        f.add(c4);
+        f.setSize(700, 700);
+        f.setLayout(null);
+        f.setVisible(true);
+
+    }
+    public static void main(String[] args) {
+        new cheackBox();
+    }
+}
