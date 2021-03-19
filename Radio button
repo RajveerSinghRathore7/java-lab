@@ -1,0 +1,28 @@
+import javax.swing.*;
+public class RadioButton {
+    JFrame f;
+    RadioButton(){
+        f = new JFrame("radio button");
+        JRadioButton r1 = new JRadioButton("farmer");
+        r1.setBounds(75,50,100,30);
+        JRadioButton r2 = new JRadioButton("defence");
+        r2.setBounds(75,100,100,30);
+        JRadioButton r3 = new JRadioButton("others");
+        r3.setBounds(75,250,100,400);
+        ButtonGroup bG = new ButtonGroup();
+        bG.add(r1);
+        bG.add(r2);
+        bG.add(r3);
+        f.add(r1);
+        f.add(r2);
+        f.add(r3);
+        f.setVisible(true);
+        f.setSize(1100,1100);
+        f.setLayout(null);
+
+    }
+
+    public static void main(String[] args) {
+        new RadioButton();
+    }
+}
